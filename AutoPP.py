@@ -1,16 +1,36 @@
 import os
+import sys
 import subprocess
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
 
+def resource_path(relative_path):
+    """Obtém o caminho absoluto para recursos (funciona no executável)"""
+    try:
+        # PyInstaller cria uma pasta temporária
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.dirname(os.path.abspath(__file__))  # Diretório do script
+    
+    path = os.path.join(base_path, relative_path)
+    print(f"Tentando carregar ícone de: {path}")  # Para debug
+    return path
+
 # Configuração do tema
-ctk.set_appearance_mode("dark")  # Modo escuro
+ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
 # Criar janela
 root = ctk.CTk()
-root.title("Git Automático")
-root.geometry("500x500")
+root.title("AutoPP")
+root.geometry("500x400")
+
+# Defina o ícone da janela
+icon_path = resource_path("LogoAutoPP16.ico")
+if os.path.exists(icon_path):  # Verifica se o ícone existe
+    root.iconbitmap(icon_path)
+else:
+    print(f"Ícone não encontrado em: {icon_path}")
 
 def escolher_pasta():
     pasta = filedialog.askdirectory()
