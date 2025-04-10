@@ -58,5 +58,5 @@ Contribuições são bem-vindas! Para contribuir:
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Contato
-Desenvolvido por [Gabriel Batista](https://github.com/gabrielbtt).
+Desenvolvido por [Gabriel Batista](https://www.linkedin.com/in/gabrielbtt/)
 Para mais informações ou sugestões, entre em contato via GitHub.
