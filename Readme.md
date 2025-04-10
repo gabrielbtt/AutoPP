@@ -59,4 +59,5 @@ Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICEN
 
 ## Contato
 Desenvolvido por [Gabriel Batista](https://www.linkedin.com/in/gabrielbtt/)
-Para mais informações ou sugestões, entre em contato via GitHub.
+
+Para mais informações ou sugestões, entre em contato via Linkedin.
